@@ -1,0 +1,10 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+Write basic tests for critical logic (matching, credit deduction, etc.)
+
+Use .env.local for environment variables and never hardcode secrets
+
+Create a .debug.log file (or use Winston/console logs for backend issues)

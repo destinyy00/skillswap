@@ -1,0 +1,18 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+Create a README.md with:
+
+Project summary
+
+Setup steps
+
+Tech stack
+
+Env variables required
+
+Use comments in tricky or clever functions — document your intent
+
+Always document each feature and each change

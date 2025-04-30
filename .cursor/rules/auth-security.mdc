@@ -1,0 +1,11 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+Always validate Firebase tokens server-side
+
+Secure sensitive routes with middleware (e.g., checkAuth middleware)
+
+Never expose Firebase secrets or PostgreSQL connection strings in client code
+

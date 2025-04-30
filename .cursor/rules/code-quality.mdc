@@ -1,0 +1,17 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+Use ESLint + Prettier with consistent formatting
+
+Stick to one naming convention:
+
+camelCase for variables and functions
+
+PascalCase for components
+
+kebab-case for file names
+
+Use clear commit messages: feat: add skill match endpoint, fix: correct credit balance bug
+

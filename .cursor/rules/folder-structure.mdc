@@ -1,0 +1,26 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+Use a consistent, modular folder structure:
+
+
+/frontend
+  /components
+  /pages
+  /hooks
+  /utils
+  /styles
+/backend
+  /src
+    /controllers
+    /routes
+    /models
+    /services
+    /utils
+/shared (for types or interfaces used by both FE & BE)
+
+Avoid deep nesting beyond 2–3 levels
+
+Keep logic separated: no business logic in components

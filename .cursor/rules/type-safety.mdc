@@ -1,0 +1,10 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+Use TypeScript across frontend and backend
+
+Define shared types/interfaces in a shared/types folder
+
+Avoid any unless absolutely necessary (and comment it)

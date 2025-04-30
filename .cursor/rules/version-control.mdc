@@ -1,0 +1,10 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+Always use Git
+
+Use .gitignore to exclude node_modules, .env, .next, dist, etc.
+
+Push to GitHub often with descriptive branches (feature/chat-system, bugfix/skill-filter)

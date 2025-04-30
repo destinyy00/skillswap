@@ -1,0 +1,10 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+Keep components small and focused (1 responsibility per component)
+
+Backend: Use RESTful route structure (/api/skills, /api/users/:id)
+
+Use service layers (e.g., userService.ts) to keep controllers clean
