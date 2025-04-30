@@ -1,1 +1,44 @@
- 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+  }
+}
+
+@layer components {
+  .button {
+    @apply px-4 py-2 rounded font-medium transition-colors;
+  }
+  
+  .button.primary {
+    @apply bg-primary-500 text-white hover:bg-primary-600;
+  }
+  
+  .button.secondary {
+    @apply bg-gray-100 text-gray-900 hover:bg-gray-200;
+  }
+  
+  .button.outline {
+    @apply border border-gray-300 bg-transparent hover:bg-gray-100;
+  }
+  
+  .button.ghost {
+    @apply bg-transparent hover:bg-gray-100;
+  }
+  
+  .button.sm {
+    @apply text-sm px-3 py-1;
+  }
+  
+  .button.md {
+    @apply text-base px-4 py-2;
+  }
+  
+  .button.lg {
+    @apply text-lg px-6 py-3;
+  }
+} 

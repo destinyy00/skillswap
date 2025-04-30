@@ -1,7 +1,5 @@
 import React from 'react';
-import { Card, CardContent, CardFooter, CardHeader } from '@shadcn/ui/card';
-import { Button } from '@shadcn/ui/button';
-import { Badge } from '@shadcn/ui/badge';
+import { Card, CardContent, CardFooter, CardHeader, Button, Badge } from '@shadcn/ui';
 import { Calendar } from 'lucide-react';
 import { motion } from 'framer-motion';
 

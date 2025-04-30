@@ -15,8 +15,13 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "@shadcn/*": ["./src/components/ui/*"],
+      "@/*": ["./src/*"],
+      "@shared/*": ["../shared/src/*"]
+    }
   },
-  "include": ["src"],
-  "references": [{ "path": "../shared" }]
+  "include": ["src", "../shared/src"]
 } 

@@ -1,14 +1,23 @@
 import React, { useState } from 'react';
-import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle } from '@shadcn/ui/dialog';
-import { Button } from '@shadcn/ui/button';
-import { Calendar } from '@shadcn/ui/calendar';
-import { Input } from '@shadcn/ui/input';
-import { Textarea } from '@shadcn/ui/textarea';
-import { Label } from '@shadcn/ui/label';
-import { CalendarIcon, Clock } from 'lucide-react';
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  Button,
+  Calendar,
+  Input,
+  Textarea,
+  Label,
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+  cn
+} from '@shadcn/ui';
+import { Calendar as CalendarIcon, Clock } from 'lucide-react';
 import { format } from 'date-fns';
-import { Popover, PopoverContent, PopoverTrigger } from '@shadcn/ui/popover';
-import { cn } from '@shadcn/lib/utils';
 
 interface UserType {
   id: string;

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
-import { Button } from '@shadcn/ui/button';
+import { Button } from '../components/ui/button';
 import { Menu, LogOut } from 'lucide-react';
 
 const Navbar: React.FC = () => {
@@ -16,7 +16,7 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className="w-full bg-white dark:bg-zinc-900 shadow-md px-4 py-2 flex items-center justify-between">
-      <Link to="/" className="font-bold text-xl text-primary">SkillSwap</Link>
+      <Link to="/" className="font-bold text-xl text-blue-600">SkillSwap</Link>
       <div className="hidden md:flex items-center gap-4">
         {user ? (
           <>
@@ -27,7 +27,7 @@ const Navbar: React.FC = () => {
                 <img src={user.photoURL} alt="avatar" className="w-8 h-8 rounded-full object-cover" />
               )}
               <span className="font-medium">{user.displayName || user.email}</span>
-              <Button variant="ghost" size="icon" onClick={handleLogout} title="Logout">
+              <Button variant="ghost" size="sm" onClick={handleLogout} title="Logout">
                 <LogOut size={20} />
               </Button>
             </div>
@@ -40,7 +40,7 @@ const Navbar: React.FC = () => {
         )}
       </div>
       <div className="md:hidden flex items-center">
-        <Button variant="ghost" size="icon" onClick={() => setMenuOpen(!menuOpen)}>
+        <Button variant="ghost" size="sm" onClick={() => setMenuOpen(!menuOpen)}>
           <Menu size={24} />
         </Button>
         {menuOpen && (
@@ -54,7 +54,7 @@ const Navbar: React.FC = () => {
                     <img src={user.photoURL} alt="avatar" className="w-8 h-8 rounded-full object-cover" />
                   )}
                   <span className="font-medium">{user.displayName || user.email}</span>
-                  <Button variant="ghost" size="icon" onClick={handleLogout} title="Logout">
+                  <Button variant="ghost" size="sm" onClick={handleLogout} title="Logout">
                     <LogOut size={20} />
                   </Button>
                 </div>

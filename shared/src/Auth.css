@@ -1,0 +1,127 @@
+/* Auth Page Styles */
+.auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+  padding: 20px;
+}
+
+.auth-container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 450px;
+  padding: 40px;
+  text-align: center;
+}
+
+.auth-container h1 {
+  color: #4a6cf7;
+  margin-bottom: 10px;
+  font-size: 32px;
+}
+
+.auth-subtitle {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Auth Form Styles */
+.auth-form-container {
+  margin-top: 20px;
+}
+
+.auth-form-container h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #555;
+}
+
+.form-group input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus {
+  border-color: #4a6cf7;
+  outline: none;
+}
+
+.auth-form button[type="submit"] {
+  background-color: #4a6cf7;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.auth-form button[type="submit"]:hover {
+  background-color: #3a5ce5;
+}
+
+.toggle-mode-button {
+  background: none;
+  border: none;
+  color: #4a6cf7;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  font-size: 16px;
+}
+
+.toggle-mode-button:hover {
+  text-decoration: underline;
+}
+
+/* Error and Loading */
+.auth-error {
+  background-color: #fff0f0;
+  color: #e53935;
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  text-align: left;
+  border-left: 4px solid #e53935;
+}
+
+.loading-spinner {
+  margin-top: 20px;
+  color: #4a6cf7;
+  font-weight: 600;
+}
+
+/* Responsive adjustments */
+@media (max-width: 500px) {
+  .auth-container {
+    padding: 30px 20px;
+  }
+} 
