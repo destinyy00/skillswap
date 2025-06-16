@@ -87,3 +87,4 @@ VITE_FIREBASE_APP_ID=your_app_id
 ---
 
 See `/docs` for more details. 
+<!-- R commit at 2025-06-16T13:48:26.796Z -->
